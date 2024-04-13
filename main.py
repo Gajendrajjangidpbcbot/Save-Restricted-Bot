@@ -33,7 +33,7 @@ def downstatus(statusfile,message):
 		with open(statusfile,"r") as downread:
 			txt = downread.read()
 		try:
-			bot.edit_message_text(message.chat.id, message.id, f"__Downloaded__ : **{txt}**")
+			bot.edit_message_text(message.chat.id, message.id, f"Downloaded : **{txt}**")
 			time.sleep(10)
 		except:
 			time.sleep(5)
